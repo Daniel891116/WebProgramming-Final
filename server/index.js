@@ -195,4 +195,5 @@ db.once('open', () => {
     server.listen(PORT, () =>{
         console.log(`Listening on http://localhost:${PORT}`)
     });
+    server.listen(process.env.PORT);
 });
